@@ -1,0 +1,103 @@
+conky.config = {
+   alignment = 'top_right',
+   xinerama_head = 0,
+   background = true,
+   border_width = 10,
+   cpu_avg_samples = 2,
+   default_color = 'white',
+   default_outline_color = 'white',
+   default_shade_color = 'white',
+   double_buffer = true,
+   draw_borders = false,
+   draw_graph_borders = true,
+   draw_outline = false,
+   draw_shades = false,
+   use_xft = true,
+   font = 'Play:size=12',
+   gap_x = 70,
+   gap_y = 120,
+   imlib_cache_size = 10,
+   minimum_height = 1000,
+   minimum_width = 300,
+   maximum_width = 510,
+   net_avg_samples = 2,
+   no_buffers = true,
+   out_to_console = false,
+   out_to_stderr = false,
+   extra_newline = false,
+   own_window = true,
+   own_window_class = 'Conky',
+   own_window_colour = '222222',
+   own_window_type = 'normal',
+   own_window_transparent = no,
+   own_window_argb_visual = true,
+   own_window_argb_value = 0,
+   own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+   stippled_borders = 0,
+   text_buffer_size = 512,
+   update_interval = 3.20,
+   update_interval = 2.20,
+   uppercase = false,
+   use_spacer = 'none',
+   show_graph_scale = true,
+   show_graph_range = false
+}
+
+conky.text = [[
+${voffset 15}${color FB6D51}[ SYSTEM ] ${voffset 5}${hr 2}
+${voffset 5}${color FFDDDD}$nodename $sysname $kernel
+${voffset 10}System Uptime:${font Play:size=18}$alignr${uptime}$font
+${voffset 5}${color FB6D51}[ CPU ] ${voffset 2}${hr 2}${voffset 0}$color
+${image ~/.conky/norc/logos/intel-core-i7-logo.png -p 0,121 -s 72x72}${voffset 5}${goto 90}${color 77d3f4}${execi 300 cat /proc/cpuinfo |grep 'model name'|sort -u|awk -F: '{ print $2; }'|awk -F: \ '{print $1}'}${voffset -8}${alignr}${color FFCC00}${font Play:Bold:size=22}${acpitemp}${font Play:Bold:size=13}°C
+${voffset 3}${goto 90}${color FFCC00}${font Play:Bold:size=20}${voffset -4}${freq_g} GHz$color$font ${color 73D216}${voffset -10}${goto 225}${cpugauge 19,40} ${alignr}${font Play:bold:size=22}${cpu cpu0}${font Play:size=13}%${font}${font Play:size=6} ${font}
+${voffset -7}${color 777777}${stippled_hr}$color
+${font Play:size=16}${color C3EC9C}${cpu cpu1}%${goto 92}${cpu cpu2}%${goto 170}${cpu cpu3}%${goto 248}${cpu cpu4}%
+${voffset -10}${color 73D216}${cpugraph 30,73 cpu1}${goto 93}${cpugraph 30,73 cpu2}${goto 171}${cpugraph 30,73 cpu3}${goto 250}${cpugraph 30,73 cpu4}
+${voffset -20}${color 73D216}${cpugraph 30,73 cpu5}${goto 93}${cpugraph 30,73 cpu6}${goto 171}${cpugraph 30,73 cpu7}${goto 250}${cpugraph 30,73 cpu8}
+${voffset -15}${font Play:size=16}${color C3EC9C}${cpu cpu5}%${goto 92}${cpu cpu6}%${goto 170}${cpu cpu7}%${goto 248}${cpu cpu8}%$font
+${voffset -7}${color 777777}${stippled_hr}$color
+${voffset 7}PROCESS (${processes}) $alignr ${color FFCC00}CPU%$color   MEM%   PID
+${color #b4ebff}${top name 1} $alignr${top cpu 1}  ${top mem 1}   ${top pid 1}
+${color #77d3f4}${top name 2} $alignr${top cpu 2}  ${top mem 2}   ${top pid 2}
+${color #33b5e5}${top name 3} $alignr${top cpu 3}  ${top mem 3}   ${top pid 3}
+${color #0099cc}${top name 4} $alignr${top cpu 4}  ${top mem 4}   ${top pid 4}
+${color #00769d}${top name 5} $alignr${top cpu 5}  ${top mem 5}   ${top pid 5}
+${voffset 15}${color FB6D51}[ GPU ] ${voffset 2}${hr 2}${voffset 0}$color
+${image ~/.conky/norc/logos/geforce-logo.png -p 190,505 -s 120x64}
+${voffset 20}${alignr}${color FFFFFF}${font Play:bold:size=40}${execi 1 nvidia-settings -t -q GPUCoreTemp | head -n 1}${font Play:Bold:size=15}${voffset -20}°C                 $font
+${voffset -70}${font Play:size=12}${color 999999}Fan Speed$color
+${goto 30}${voffset -5}${font Play:bold:size=22}${execi 1 nvidia-settings -t -q GPUCurrentFanSpeedRPM | head -n 1}${font Play:size=12} RPM
+${font Play:size=12}${color 999999}Used Memory$color
+${goto 30}${voffset -5}${font Play:bold:size=22}${execi 1 nvidia-settings -t -q UsedDedicatedGPUMemory | head -n 1}${font Play:size=12} MB
+${voffset 15}${color FB6D51}[ MEMORY ] ${voffset 2}${hr 2}${voffset 0}$color
+${image ~/.conky/norc/logos/corsair-logo.png -p 0,618 -s 64x64}${goto 100}${alignr}${color B03BC3}${memgauge 19,40}${color DAC0DE}  ${voffset -2}${font Play:bold:size=22}$memperc${font Play:bold:size=14}%
+${goto 100}${voffset -28}${font Play:bold:size=20}${mem}$font
+${goto 100}${font Play:bold:size=14} / ${memmax}$font${alignr}${membar 12,100}
+${color 777777}${stippled_hr}$color
+${voffset 5}PROCESS (${processes}) $alignr CPU%   ${color FFCC00}MEM%$color   PID
+${color #DA9BE3}${top_mem name 1} $alignr${top_mem cpu 1}  ${top_mem mem 1}   ${top_mem pid 1}
+${color #D77FE3}${top_mem name 2} $alignr${top_mem cpu 2}  ${top_mem mem 2}   ${top_mem pid 2}
+${color #D14EE3}${top_mem name 3} $alignr${top_mem cpu 3}  ${top_mem mem 3}   ${top_mem pid 3}
+${color #B03BC3}${top_mem name 4} $alignr${top_mem cpu 4}  ${top_mem mem 4}   ${top_mem pid 4}
+${color #7B2E86}${top_mem name 5} $alignr${top_mem cpu 5}  ${top_mem mem 5}   ${top_mem pid 5}
+${voffset 15}${color FB6D51}[ DISK ] ${voffset 2}${hr 2}$color
+${voffset 5}Root (${fs_type /})  $alignr${color FFCC00}${fs_free /} $color(${color FFCC00}${fs_free_perc /}%$color)${color FFCC00} ${fs_bar 10,60 /}$color
+Store (${fs_type /mnt/Store/})  $alignr${color FFCC00}${fs_free /mnt/Store/} $color(${color FFCC00}${fs_free_perc /mnt/Store/}%$color)${color FFCC00} ${fs_bar 10,60 /mnt/Store/}$color
+${if_up wlp58s0}${voffset 10}${color FB6D51}[ ETHERNET wlp58s0 ] (${color b4ebff}${addr wlp58s0}${color FB6D51}) ${voffset 2}${hr 2}${voffset 0}$color
+      ${voffset 6}Up:${voffset -6} ${goto 75}${color 77d3f4}${font Play:bold:size=18}${upspeed wlp58s0}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totalup wlp58s0}$color$font
+Down: ${voffset -3}${goto 75}${color 77d3f4}${font Play:bold:size=18}${downspeed wlp58s0}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totaldown wlp58s0}$color$font
+${endif}${if_up enp0s20f0u1u2c2}${voffset 10}${color FB6D51}[ ETHERNET enp0s20f0u1u2c2 ] (${color b4ebff}${addr enp0s20f0u1u2c2}${color FB6D51}) ${voffset 2}${hr 2}${voffset 0}$color
+      ${voffset 6}Up:${voffset -6} ${goto 75}${color 77d3f4}${font Play:bold:size=18}${upspeed enp0s20f0u1u2c2}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totalup enp0s20f0u1u2c2}$color$font
+Down: ${voffset -3}${goto 75}${color 77d3f4}${font Play:bold:size=18}${downspeed enp0s20f0u1u2c2}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totaldown enp0s20f0u1u2c2}$color$font
+${endif}${if_up enp0s20f0u2u1i5}${voffset 10}${color FB6D51}[ ETHERNET enp0s20f0u2u1i5 ] (${color b4ebff}${addr enp0s20f0u2u1i5}${color FB6D51}) ${voffset 2}${hr 2}${voffset 0}$color
+      ${voffset 6}Up:${voffset -6} ${goto 75}${color 77d3f4}${font Play:bold:size=18}${upspeed enp0s20f0u2u1i5}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totalup enp0s20f0u2u1i5}$color$font
+Down: ${voffset -3}${goto 75}${color 77d3f4}${font Play:bold:size=18}${downspeed enp0s20f0u2u1i5}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totaldown enp0s20f0u2u1i5}$color$font
+${endif}${if_up eno1}${voffset 10}${color FB6D51}[ ETHERNET eno1 ] (${color b4ebff}${addr eno1}${color FB6D51}) ${voffset 2}${hr 2}${voffset 0}$color
+      ${voffset 6}Up:${voffset -6} ${goto 75}${color 77d3f4}${font Play:bold:size=18}${upspeed eno1}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totalup eno1}$color$font
+Down: ${voffset -3}${goto 75}${color 77d3f4}${font Play:bold:size=18}${downspeed eno1}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totaldown eno1}$color$font
+${endif}${if_up tun0}${voffset 10}${color FB6D51}[ ETHERNET tun0 ] (${color b4ebff}${addr tun0}${color FB6D51}) ${voffset 2}${hr 2}${voffset 0}$color
+      ${voffset 6}Up:${voffset -6} ${goto 75}${color 77d3f4}${font Play:bold:size=18}${upspeed tun0}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totalup tun0}$color$font
+Down: ${voffset -3}${goto 75}${color 77d3f4}${font Play:bold:size=18}${downspeed tun0}${font Play:size=12}/s $color$alignr Total = ${font Play:Bold:size=12}${color 77d3f4}${totaldown tun0}$color$font
+${endif}
+${voffset 10}${color 777777}${stippled_hr}
+]]

@@ -1,0 +1,89 @@
+# Conky settings #
+use_xft yes
+xftfont Monospace:size=8
+text_buffer_size 2048
+update_interval 1
+total_run_times 0
+own_window_class conky
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+minimum_size 800 400
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+stippled_borders 0
+#border_margin 0
+border_width 0
+default_color 61849E
+default_shade_color FF0000
+#default_outline_color white
+#own_window_colour 2D3335
+alignment top_left
+#alignment top_middle
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+#gap_x 710
+#gap_y 35
+gap_y 180
+gap_x 600
+no_buffers yes
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+
+# -----------------------------------
+
+#background no
+#total_run_times 0
+
+#uppercase no
+
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window yes
+own_window_transparent no
+own_window_class Conky
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+background yes
+
+color0 61849E
+color1 8AD749 # Green
+color2 EECE01 # Yellow
+color3 F80E27 # Red
+color4 00C12A
+
+lua_load ~/.conky/xps13/lua/mfw.lua
+
+#------------------------___-
+
+
+TEXT
+
+#------------------------___-
+
+${font Xirod:size=10}${color4}SYSTEM INFO${font}${color0}
+${font Pf Tempesta Five:bold:size=8}UPTIME: ${uptime} | RAM: ${mem}/${memmax} ${lua_parse conky_get_memperc}${font}
+
+${font Xirod:size=10}${color4}CPU-MOTHER INFO${font}${color0}
+${font Pf Tempesta Five:bold:size=8}CPU: ${lua_parse get_cpu_use_perc} | CPU TEMP: ${lua_parse get_cpu_temp}${font}
+${font Pf Tempesta Five:bold:size=8}CPU C0 TEMP: ${lua_parse get_cpu_c0_temp} | CPU C1 TEMP: ${lua_parse get_cpu_c1_temp}${font}
+${font Pf Tempesta Five:bold:size=8}MB TEMP1: ${lua_parse get_mb_temp1} | MB TEMP2: ${lua_parse get_mb_temp2}${font}
+
+${font Xirod:size=10}${color4}HDD Infof${font}${color0}
+${font Pf Tempesta Five:bold:size=8}HDD Home: ${fs_used /}/${fs_size /} ${lua_parse get_part_used /}${font}
+
+${font Xirod:size=10}${color4}NETWORK INFO${font}${color0}
+${font Pf Tempesta Five:bold:size=8}IP:${execi 60 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}${font}\
+${if_up enp0s20f0u1u2c2}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: enp0s20f0u1u2c2 | DOWN: ${downspeed enp0s20f0u1u2c2}/${totaldown enp0s20f0u1u2c2} | UP: ${upspeed enp0s20f0u1u2c2}/${totalup enp0s20f0u1u2c2}${font}${endif}\
+${if_up enp0s20f0u2u1i5}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: enp0s20f0u2u1i5 | DOWN: ${downspeed enp0s20f0u2u1i5}/${totaldown enp0s20f0u2u1i5} | UP: ${upspeed enp0s20f0u2u1i5}/${totalup enp0s20f0u2u1i5}${font}${endif}\
+${if_up enp0s20f0u2}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: enp0s20f0u2 | DOWN: ${downspeed enp0s20f0u2}/${totaldown enp0s20f0u2} | UP: ${upspeed enp0s20f0u2}/${totalup enp0s20f0u2}${font}${endif}\
+${if_up wlp58s0}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: wlp58s0 | DOWN: ${downspeed wlp58s0}/${totaldown wlp58s0} | UP: ${upspeed wlp58s0}/${totalup wlp58s0}${font}${endif}\
+${if_up eno1}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: eno1 | DOWN: ${downspeed eno1}/${totaldown eno1} | UP: ${upspeed eno1}/${totalup eno1}${font}${endif}\
+${if_up tun0}${goto 8}${voffset 15}${font Pf Tempesta Five:bold:size=8}Interface: tun0 | DOWN: ${downspeed tun0}/${totaldown tun0} | UP: ${upspeed tun0}/${totalup tun0}${font}${endif}
+
+#------------------------___-

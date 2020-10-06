@@ -1,0 +1,11 @@
+### GitIgnore file ###
+
+.cert/*
+
+obs-studio/logs/*
+obs-studio/profiler_data/*
+
+.bashrc_private
+
+# Visual Studio Code config files
+# .vscode/

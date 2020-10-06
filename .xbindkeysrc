@@ -1,0 +1,3 @@
+# Gnome Shell Mouse Button 8 to Overview
+"xdotool key Super_L"
+release + b:9
