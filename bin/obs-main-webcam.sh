@@ -36,7 +36,7 @@ echo "----------------"
 
 # execute key stroke in OBS
 
-xdotool windowactivate --sync $WINDOWID key SUPER+ALT+4
+xdotool windowactivate --sync $WINDOWID key SUPER+ALT+5
 exit 0
 
 #----------------------------------------------------------------------------------------
