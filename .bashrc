@@ -26,16 +26,16 @@ if [ -f `which powerline-daemon` ]; then
 fi
 
 #----------------------------------------------------------------------#
-# default
+# default software
 #----------------------------------------------------------------------#
 
-# Por defecto.
+# default
 export EDITOR="vim"
 export BROWSER="firefox"
 # export BROWSER="google-chrome-stable"
 
 #----------------------------------------------------------------------#
-# var commands alias
+# command alias
 #----------------------------------------------------------------------#
 
 alias psl="ps -aux | less"
@@ -43,7 +43,7 @@ alias pslx="ps -aux"
 alias df="df -h"
 
 #----------------------------------------------------------------------#
-# WiFi
+# WiFi alias
 #----------------------------------------------------------------------#
 
 # Wifi on/off
@@ -57,7 +57,7 @@ alias wifi_off="nmcli radio wifi off"
 # Compress and decompress
 #----------------------------------------------------------------------#
 
-# Extraer comprimidos
+# Extract files
 extract ()
 {
     if [ -f $1 ] ; then
@@ -191,7 +191,7 @@ savelog(){
 # save_term_logfile
 
 #----------------------------------------------------------------------#
-# 
+#  php local server for debug
 #----------------------------------------------------------------------#
 
 # php Server 
@@ -200,7 +200,7 @@ alias php-server='php -S localhost:8080 -t ./'
 alias php-server-port='php -S localhost:$1 -t ./'
 
 #----------------------------------------------------------------------#
-# 
+#  tmux / conky / desktop screenshot
 #----------------------------------------------------------------------#
 
 # Open Vim with tmux
@@ -214,7 +214,7 @@ function showmydesktopscreen() { screenfetch; scrot --delay 2 --quality 100 $HOM
 function showmydesktopneo() { neofetch --config ~/bin/neofetch.conf; scrot --delay 2 --quality 100 $HOME/Pictures/ShowMyDesktop/ShowMyDesktopFriday_%Y-%m-%d_$timestamp.png ; }
 
 #----------------------------------------------------------------------#
-# 
+# ping
 #----------------------------------------------------------------------#
 
 complete -W 'google.com cyberciti.biz nixcraft.com' ping
@@ -222,14 +222,14 @@ complete -W 'google.com cyberciti.biz nixcraft.com' ping
 alias ping='ping -D -O '
 
 #----------------------------------------------------------------------#
-# alias
+# alias vscode
 #----------------------------------------------------------------------#
 
 # Fix VS Code max files
 alias vscode-show-max-files='cat /proc/sys/fs/inotify/max_user_watches'
 alias vscode-fix-max-files='sudo sysctl -w fs.inotify.max_user_watches=18192'
 
-# List Extensions
+# List Extensions and get install command
 alias vscode-list-extension='code --list-extensions | xargs -L 1 echo code --install-extension'
 
 #----------------------------------------------------------------------#
