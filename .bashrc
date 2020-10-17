@@ -237,3 +237,13 @@ alias vscode-list-extension='code --list-extensions | xargs -L 1 echo code --ins
 #----------------------------------------------------------------------#
 
 [ -f $HOME/.bashrc_private ] && . $HOME/.bashrc_private
+
+#----------------------------------------------------------------------#
+# History
+#----------------------------------------------------------------------#
+
+export HISTSIZE=600
+export HISTFILE=~/.bash_history
+export HISTFILESIZE=5000
+#export HISTCONTROL=ignoredups
+export HISTTIMEFORMAT="%y/%m/%d %T "
