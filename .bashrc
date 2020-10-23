@@ -221,6 +221,13 @@ complete -W 'google.com cyberciti.biz nixcraft.com' ping
 
 alias ping='ping -D -O '
 
+# Stop after sending count ECHO_REQUEST packets #
+alias ping5='ping -c 5'
+# Do not wait interval 1 second, go fast #
+alias fastping='ping -c 100 -s.2'
+
+alias showports='netstat -tulanp'
+
 #----------------------------------------------------------------------#
 # alias vscode
 #----------------------------------------------------------------------#
@@ -233,7 +240,7 @@ alias vscode-fix-max-files='sudo sysctl -w fs.inotify.max_user_watches=18192'
 alias vscode-list-extension='code --list-extensions | xargs -L 1 echo code --install-extension'
 
 #----------------------------------------------------------------------#
-# Private info
+# Private config
 #----------------------------------------------------------------------#
 
 [ -f $HOME/.bashrc_private ] && . $HOME/.bashrc_private
@@ -247,3 +254,36 @@ export HISTFILE=~/.bash_history
 export HISTFILESIZE=5000
 #export HISTCONTROL=ignoredups
 export HISTTIMEFORMAT="%y/%m/%d %T "
+
+
+#----------------------------------------------------------------------#
+# Update
+#----------------------------------------------------------------------#
+
+function fedora-update() { 
+        sudo flatpak update -y;
+        sudo dnf update --refresh -y;
+    }
+
+#----------------------------------------------------------------------#
+# Commands
+#----------------------------------------------------------------------#
+
+
+## get rid of command not found ##
+alias cd..='cd ..'
+
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+# get web server headers #
+alias header='curl -I'
+ 
+# find out if remote server supports gzip / mod_deflate or not #
+alias headerc='curl -I --compress'
+

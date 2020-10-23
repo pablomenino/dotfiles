@@ -2,3 +2,5 @@
 	email = pablo.menino@mfwlab.com
 	name = Pablo Meniño
 
+[cola]
+	spellcheck = false

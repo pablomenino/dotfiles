@@ -14,14 +14,14 @@
 ~Msle0~/------------------------------------------------------
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1602710215,,"q!"
 :q
 |2,0,1596401480,,"q"
 :w
 |2,0,1596401477,,"w"
 :yy
 |2,0,1596401308,,"yy"
-:q!
-|2,0,1583158611,,"q!"
 :w!
 |2,0,1545836257,,"w!"
 
@@ -71,14 +71,14 @@
 |3,0,36,0,1,0,1583158589,"-"
 
 # File marks:
-'0  1  0  ~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG
-|4,48,1,0,1601676838,"~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG"
-'1  301  25  ~/.tmux.conf.local
-|4,49,301,25,1583158611,"~/.tmux.conf.local"
+'0  1  0  ~/Projects/github/elgato-pi-deck-server/.git/MERGE_MSG
+|4,48,1,0,1602710215,"~/Projects/github/elgato-pi-deck-server/.git/MERGE_MSG"
+'1  1  0  ~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG
+|4,49,1,0,1601676838,"~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG"
 '2  301  25  ~/.tmux.conf.local
-|4,50,301,25,1583158600,"~/.tmux.conf.local"
-'3  1  0  ~/.tmux.conf.local
-|4,51,1,0,1583158573,"~/.tmux.conf.local"
+|4,50,301,25,1583158611,"~/.tmux.conf.local"
+'3  301  25  ~/.tmux.conf.local
+|4,51,301,25,1583158600,"~/.tmux.conf.local"
 '4  1  0  ~/.tmux.conf.local
 |4,52,1,0,1583158573,"~/.tmux.conf.local"
 '5  1  0  ~/.tmux.conf.local
@@ -86,13 +86,17 @@
 '6  1  0  ~/.tmux.conf.local
 |4,54,1,0,1583158573,"~/.tmux.conf.local"
 '7  1  0  ~/.tmux.conf.local
-|4,55,1,0,1583158400,"~/.tmux.conf.local"
+|4,55,1,0,1583158573,"~/.tmux.conf.local"
 '8  1  0  ~/.tmux.conf.local
 |4,56,1,0,1583158400,"~/.tmux.conf.local"
 '9  1  0  ~/.tmux.conf.local
 |4,57,1,0,1583158400,"~/.tmux.conf.local"
 
 # Jumplist (newest first):
+-'  1  0  ~/Projects/github/elgato-pi-deck-server/.git/MERGE_MSG
+|4,39,1,0,1602710215,"~/Projects/github/elgato-pi-deck-server/.git/MERGE_MSG"
+-'  1  0  ~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG
+|4,39,1,0,1601676838,"~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG"
 -'  1  0  ~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG
 |4,39,1,0,1601676838,"~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG"
 -'  301  25  ~/.tmux.conf.local
@@ -128,6 +132,66 @@
 -'  301  25  ~/.tmux.conf.local
 |4,39,301,25,1583158611,"~/.tmux.conf.local"
 -'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158611,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
 |4,39,301,25,1583158600,"~/.tmux.conf.local"
 -'  301  25  ~/.tmux.conf.local
 |4,39,301,25,1583158600,"~/.tmux.conf.local"
@@ -159,6 +223,10 @@
 |4,39,301,25,1583158600,"~/.tmux.conf.local"
 -'  301  25  ~/.tmux.conf.local
 |4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
+-'  301  25  ~/.tmux.conf.local
+|4,39,301,25,1583158600,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
 |4,39,1,0,1583158590,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
@@ -224,77 +292,13 @@
 -'  1  0  ~/.tmux.conf.local
 |4,39,1,0,1583158590,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158573,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  1  0  ~/.tmux.conf.local
-|4,39,1,0,1583158400,"~/.tmux.conf.local"
--'  717  0  ~/.bash_history
-|4,39,717,0,1564409268,"~/.bash_history"
--'  717  0  ~/.bash_history
-|4,39,717,0,1564409268,"~/.bash_history"
--'  717  0  ~/.bash_history
-|4,39,717,0,1564409268,"~/.bash_history"
+|4,39,1,0,1583158590,"~/.tmux.conf.local"
 
 # History of marks within files (newest to oldest):
+
+> ~/Projects/github/elgato-pi-deck-server/.git/MERGE_MSG
+	*	1602710202	0
+	"	1	0
 
 > ~/Projects/gitmfwlab/mfwlab/public/sessioncommander/.git/COMMIT_EDITMSG
 	*	1601676729	0

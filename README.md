@@ -2,6 +2,8 @@
 
 🏠 Personal dotfiles for Fedora Linux.
 
+[WebSite](https://lab.mfwlab.com/lab/dotfiles/)
+
 Installation
 ------------
 
@@ -61,4 +63,25 @@ ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.gitconfig ~/.gitconfi
 rm ~/.config/alacritty
 ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/alacritty ~/.config/alacritty
 
+
+rm ~/.linphone-history.db
+ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.linphone-history.db ~/.linphone-history.db
+
+rm ~/.linphonerc
+ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.linphonerc ~/.linphonerc
+
+rm -r ~/.config/obs-studio/
+ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/obs-studio ~/.config/obs-studio
+
 ```
+
+## You can support me:
+
+### Librepay:
+
+<script src="https://liberapay.com/pablomenino/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/pablomenino/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+
+### Paypal:
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HPTG85J8NQVG)
