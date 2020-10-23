@@ -69,8 +69,7 @@ ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/alacritty ~/.config/al
 
 ### Librepay:
 
-<script src="https://liberapay.com/pablomenino/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/pablomenino/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+<a href="https://liberapay.com/pablomenino/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 ### Paypal:
 
