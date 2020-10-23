@@ -63,16 +63,6 @@ ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.gitconfig ~/.gitconfi
 rm ~/.config/alacritty
 ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/alacritty ~/.config/alacritty
 
-
-rm ~/.linphone-history.db
-ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.linphone-history.db ~/.linphone-history.db
-
-rm ~/.linphonerc
-ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/.linphonerc ~/.linphonerc
-
-rm -r ~/.config/obs-studio/
-ln -sv ~/Projects/gitmfwlab/mfwlab/customization/dotfiles/obs-studio ~/.config/obs-studio
-
 ```
 
 ## You can support me:
